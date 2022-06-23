@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero automatico</title>
+</head>
+<body>
+    
+    <div class="FondoCajero">
+        <div class="UiUsuario" id="UiUser">
+            <p id="PSaldoAct" class="SaldoAct"></p>
+            <p id="DepositoSaldoNuevo" class="DepositoSaldo"></p>
+            <input type="text" placeholder="Ingresar cantidad" id="deposito">
+            <div class="containerBtns">
+                <button onclick="depositar()" class="primary-button">DEPOSITAR</button>
+                <button onclick="retirar()" class="primary-button">RETIRAR</button> 
+            </div>
+        </div>
+        <div class="loginContenedor" id="divLogin">
+            <label for="userInput" id="LabelUser">Usuario:</label>
+            <input type="text" placeholder="Usuario" id="userInput">
+            <label for="PassInput" id="LabelPass">Contraseña:</label>
+            <input type="password"  id="PassInput" placeholder="Constraseña">
+            <button onclick="Login()" class="primary-button" id="btnIngresar">INGRESAR</button>
+        </div>
+       
+        <div class="alertas" id="alerta1">
+            <p>Usuario Incorrecto</p>
+        </div>
+        <div class="alertas2" id="alerta2">
+            <p></p>
+        </div>
+    </div>
+</body>
+</body>
+</html>
